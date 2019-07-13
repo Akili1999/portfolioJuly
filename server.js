@@ -3,7 +3,7 @@ var express = require("express");
 // we are mapping the use of express to the var named "app"
 var app = express();
 // we do process.env.PORT so that heroku will adapt the port, and we also set it to 8080 so that we can use localhost to test our app
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8080;
 
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
